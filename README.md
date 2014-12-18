@@ -1,11 +1,18 @@
 Capture Images from the Command Line
 =============
-Forked and improved from: http://iharder.net/imagesnap
+Forked and improved from: https://github.com/samgreen/ImageSnapMavericks 
+Which was forked and improved from: http://iharder.net/imagesnap
 
-A command-line tool that lets you capture still images from an iSight or other video source.
+A collection of methods for capturing still images from an iSight or other video source. Unlike the original ImageSnap, this version has separated the command line application from the camera methods, allowing this to be used as a library within other applications. For example, it is used in LifeSlice https://github.com/wanderingstan/LifeSlice
 
-Installation
-=============
+It still includes the original command-line tool that lets you capture still images from an iSight or other video source.
+
+Installation as Library
+=======================
+Include the ImageSnap.m and ImageSnap.h files in your project and add `import "ImageSnap.h"` to your source code. 
+
+Installation of Command-Line Tool
+=================================
 Copy the imagesnap file to someplace on your path like `/usr/local/bin`, or leave it in a "current directory," and call it with `imagesnap` instead.
 
 Usage
