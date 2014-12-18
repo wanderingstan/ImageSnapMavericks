@@ -10,9 +10,9 @@
 		51FA5EE8183F6D1300C9F2FA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FA5EE7183F6D1300C9F2FA /* AVFoundation.framework */; };
 		51FA5EEA183F744B00C9F2FA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FA5EE9183F744B00C9F2FA /* CoreMedia.framework */; };
 		8DD76F790486A8DE00D96B5E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AB6884FE841BABC02AAC07 /* CoreFoundation.framework */; };
-		D44480A7105BFF5600756CA8 /* ImageSnap.m in Sources */ = {isa = PBXBuildFile; fileRef = D44480A6105BFF5600756CA8 /* ImageSnap.m */; };
 		D48D572910598E4000885DA8 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48D572810598E4000885DA8 /* Cocoa.framework */; };
 		D48D572D10598E4000885DA8 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48D572C10598E4000885DA8 /* Quartz.framework */; };
+		F6EAC5CC1A43692C00B16F08 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EAC5CB1A43692C00B16F08 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +37,7 @@
 		D48D572C10598E4000885DA8 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = /System/Library/Frameworks/Quartz.framework; sourceTree = "<absolute>"; };
 		D49AA9851085011600FE189B /* ReadMeOrDont.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ReadMeOrDont.rtf; sourceTree = "<group>"; };
 		D4C1B149105C049B00FCB6A2 /* imagesnap */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = imagesnap; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6EAC5CB1A43692C00B16F08 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +72,7 @@
 			children = (
 				D44480A5105BFF5600756CA8 /* ImageSnap.h */,
 				D44480A6105BFF5600756CA8 /* ImageSnap.m */,
+				F6EAC5CB1A43692C00B16F08 /* main.m */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -156,7 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D44480A7105BFF5600756CA8 /* ImageSnap.m in Sources */,
+				F6EAC5CC1A43692C00B16F08 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +169,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_MODEL_TUNING = G5;
@@ -183,6 +186,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_MODEL_TUNING = G5;
 				INSTALL_PATH = /usr/local/bin;

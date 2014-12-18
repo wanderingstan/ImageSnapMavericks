@@ -10,7 +10,6 @@
 #import <Cocoa/Cocoa.h>
 #import <AVFoundation/AVFoundation.h>
 
-//NSString *VERSION = @"0.3.0";
 
 @interface ImageSnap : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {
     CVImageBufferRef mCurrentImageBuffer;

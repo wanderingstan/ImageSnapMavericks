@@ -9,12 +9,15 @@
 
 #import "ImageSnap.h"
 
-#define error(...) fprintf(stderr, __VA_ARGS__)
-#define console(...) (!g_quiet && printf(__VA_ARGS__))
-#define verbose(...) (g_verbose && !g_quiet && fprintf(stderr, __VA_ARGS__))
-
-BOOL g_verbose = NO;
-BOOL g_quiet = NO;
+#ifndef error
+#define error(...)
+#endif
+#ifndef console
+#define console(...)
+#endif
+#ifndef verbose
+#define verbose(...)
+#endif
 
 @interface ImageSnap ()
 
@@ -370,7 +373,7 @@ BOOL g_quiet = NO;
     // Add sample buffer serial queue
     dispatch_queue_t queue = dispatch_queue_create("VideoCaptureQueue", NULL);
     [_output setSampleBufferDelegate:self queue:queue];
-    dispatch_release(queue);
+//    dispatch_release(queue);
 	verbose( "Done.\n" );
     [_session addOutput:_output];
     
