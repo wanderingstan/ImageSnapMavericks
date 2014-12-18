@@ -1,7 +1,6 @@
-Capture Images from the Command Line
-=============
-Forked and improved from: https://github.com/samgreen/ImageSnapMavericks 
-Which was forked and improved from: http://iharder.net/imagesnap
+Capture Images from Camera
+==========================
+Forked and improved from: https://github.com/samgreen/ImageSnapMavericks, which was forked and improved from: http://iharder.net/imagesnap
 
 A collection of methods for capturing still images from an iSight or other video source. Unlike the original ImageSnap, this version has separated the command line application from the camera methods, allowing this to be used as a library within other applications. For example, it is used in LifeSlice https://github.com/wanderingstan/LifeSlice
 
