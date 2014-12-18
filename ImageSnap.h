@@ -4,11 +4,13 @@
 //
 //  Created by Robert Harder on 9/10/09.
 //  Updated by Sam Green for Mavericks (OSX 10.9) on 11/22/13
+//  Updated by Stan James for ARC on 2013-12-18
 //
+
 #import <Cocoa/Cocoa.h>
 #import <AVFoundation/AVFoundation.h>
 
-NSString *VERSION = @"0.3.0";
+//NSString *VERSION = @"0.3.0";
 
 @interface ImageSnap : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {
     CVImageBufferRef mCurrentImageBuffer;
